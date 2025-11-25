@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>For My Love ❤️</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- decorative layers -->
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- controls -->
+  <div class="controls">
+    <button id="music-toggle" class="control-btn" aria-pressed="false" title="Toggle music">🔊 Music</button>
+    <button id="night-toggle" class="control-btn" aria-pressed="false" title="Night mode">🌙 Night</button>
+    <button id="surprise-open" class="control-btn" title="Open surprise">🎁 Surprise</button>
+  </div>
+
+  <!-- main -->
+  <main class="wrapper fade-in" role="main" aria-labelledby="main-title">
+    <h1 id="main-title" class="title glow-text">Hey, <span id="her-name">Riddhi</span> ❤️</h1>
+
+    <p class="subtitle">I made something tiny… but full of feelings.</p>
+
+    <button id="open-btn" class="btn open-btn">Open the Love Letter 💌</button>
+
+    <article id="card" class="card hidden" aria-hidden="true">
+      <h2 class="card-title glow-soft">From Someone Who Really Likes You 💻❤️</h2>
+
+      <p id="typed-message" class="message" aria-live="polite"></p>
+
+      <h2 class="question glow-soft">So... Will you be mine? 🥺💘</h2>
+
+      <div class="actions">
+        <button id="yes-btn" class="btn yes">Yes 💕</button>
+        <button id="no-btn" class="btn no">No 😜</button>
+      </div>
+
+      <p id="response" class="response" aria-live="polite"></p>
+    </article>
+  </main>
+
+  <!-- fireworks canvas (on top) -->
+  <canvas id="fireworks-canvas" class="fireworks-canvas" aria-hidden="true"></canvas>
+
+  <!-- Surprise Modal -->
+  <div id="surprise-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="surprise-title">
+    <div class="modal-card">
+      <h3 id="surprise-title">A little secret...</h3>
+      <p class="modal-message">I love you more than words can describe.</p>
+      <div class="modal-actions">
+        <button id="close-surprise" class="btn">Close ❤️</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="love.js"></script>
+</body>
+</html>
